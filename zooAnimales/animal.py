@@ -28,10 +28,10 @@ class Animal:
         return m1+m2
     
     def getNombre(self):
-        return self.nombre()
+        return self.nombre
     
     def getEdad(self):
-        return self.edad()
+        return self.edad
     
     def setHabitat(self):
         return self.habitat
