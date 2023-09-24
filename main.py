@@ -1,3 +1,3 @@
-from zooAnimales.animal import Animal
+from zooAnimales import mod
 
-print(Animal.totalPorTipo())
+print(mod.totalPorTipo())
