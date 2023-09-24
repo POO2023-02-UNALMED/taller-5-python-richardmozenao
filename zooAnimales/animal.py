@@ -1,4 +1,9 @@
-from . import *
+from .anfibio import *
+from .ave import *
+from .mamifero import *
+from .pez import *
+from .reptil import *
+
 
 class Animal:
     def __init__(self, nombre, edad, habitat, genero, zona = None):
