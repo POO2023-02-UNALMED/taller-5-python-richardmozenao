@@ -1,3 +1,9 @@
+from zooAnimales.ave import Ave
+from zooAnimales.anfibio import Anfibio
+from zooAnimales.mamifero import Mamifero
+from zooAnimales.pez import Pez
+from zooAnimales.reptil import Reptil
+
 class Animal:
     def __init__(self, nombre, edad, habitat, genero, zona = None):
         self.nombre = nombre
@@ -9,14 +15,15 @@ class Animal:
     def movimiento(self):
         return "desplazarce"
     
-    def totalPorTipo(self):
+    @classmethod
+    def totalPorTipo(cls):
         mensaje = (
             "Mamifero: {}"
             "Aves: {}"
             "Reptiles: {}"
             "Peces: {}"
             "Anfibios: {}"
-        ).format()
+        ).format(Mamifero.cantidadMamiferos(), Ave.cantidadAves(), Reptil.cantidadReptiles(), Pez.cantidadPeces, Anfibio.cantidadAnfibios())
 
         return mensaje
     
@@ -26,6 +33,9 @@ class Animal:
         if self.zona != None:
             m2 = (", la zona en la que me ubico es {}, en el {}").format(self.zona, self.zona.getZoo())
         return m1+m2
+    
+    def toString(self):
+        return str(self)
     
     def getNombre(self):
         return self.nombre

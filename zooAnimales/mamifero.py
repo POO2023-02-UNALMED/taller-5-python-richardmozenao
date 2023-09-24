@@ -33,7 +33,7 @@ class Mamifero(Animal):
     def getLeones(cls):
         return cls.leones
     
-    def getpatas(self):
+    def getPatas(self):
         return self.patas
     
     def isPelaje(self):
