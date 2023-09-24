@@ -1,4 +1,8 @@
-#import moduloB
+from anfibio import Anfibio
+from ave import Ave
+from mamifero import Mamifero
+from pez import Pez
+from reptil import Reptil
 
 class Animal:
     def __init__(self, nombre, edad, habitat, genero, zona = None):
@@ -14,11 +18,11 @@ class Animal:
     @classmethod
     def totalPorTipo(cls):
         mensaje = (
-            "Mamifero: {}"
-            "Aves: {}"
-            "Reptiles: {}"
-            "Peces: {}"
-            "Anfibios: {}"
+            "Mamifero: {}\n"
+            "Aves: {}\n"
+            "Reptiles: {}\n"
+            "Peces: {}\n"
+            "Anfibios: {}\n"
         ).format(Mamifero.cantidadMamiferos(), Ave.cantidadAves(), Reptil.cantidadReptiles(), Pez.cantidadPeces(), Anfibio.cantidadAnfibios())
         return mensaje
     
