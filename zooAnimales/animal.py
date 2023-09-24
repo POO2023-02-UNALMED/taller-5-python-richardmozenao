@@ -1,9 +1,4 @@
-from .anfibio import *
-from .ave import *
-from .mamifero import *
-from .pez import *
-from .reptil import *
-
+#import moduloB
 
 class Animal:
     def __init__(self, nombre, edad, habitat, genero, zona = None):
@@ -24,8 +19,7 @@ class Animal:
             "Reptiles: {}"
             "Peces: {}"
             "Anfibios: {}"
-        ).format(Mamifero.cantidadMamiferos(), Ave.cantidadAves(), Reptil.cantidadReptiles(), Pez.cantidadPeces, Anfibio.cantidadAnfibios())
-
+        ).format(Mamifero.cantidadMamiferos(), Ave.cantidadAves(), Reptil.cantidadReptiles(), Pez.cantidadPeces(), Anfibio.cantidadAnfibios())
         return mensaje
     
     def __str__(self):

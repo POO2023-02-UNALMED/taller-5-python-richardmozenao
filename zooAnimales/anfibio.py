@@ -1,4 +1,4 @@
-from .animal import Animal
+from animal import Animal
 
 class Anfibio(Animal):
     listado = []
@@ -13,7 +13,7 @@ class Anfibio(Animal):
 
     @classmethod
     def cantidadAnfibios(cls):
-        return len(cls.listado())
+        return len(cls.listado)
     
     def movimiento():
         return "saltar"
