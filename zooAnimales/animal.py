@@ -1,8 +1,4 @@
-from zooAnimales.ave import Ave
-from zooAnimales.anfibio import Anfibio
-from zooAnimales.mamifero import Mamifero
-from zooAnimales.pez import Pez
-from zooAnimales.reptil import Reptil
+from . import *
 
 class Animal:
     def __init__(self, nombre, edad, habitat, genero, zona = None):
