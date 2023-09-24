@@ -1,8 +1,8 @@
-from anfibio import Anfibio
-from ave import Ave
-from mamifero import Mamifero
-from pez import Pez
-from reptil import Reptil
+# from anfibio import Anfibio
+# from ave import Ave
+# from mamifero import Mamifero
+# from pez import Pez
+# from reptil import Reptil
 
 class Animal:
     def __init__(self, nombre, edad, habitat, genero, zona = None):
@@ -17,6 +17,11 @@ class Animal:
     
     @classmethod
     def totalPorTipo(cls):
+        from zooAnimales.anfibio import Anfibio
+        from zooAnimales.ave import Ave
+        from zooAnimales.mamifero import Mamifero
+        from zooAnimales.pez import Pez
+        from zooAnimales.reptil import Reptil
         mensaje = (
             "Mamifero: {}\n"
             "Aves: {}\n"
