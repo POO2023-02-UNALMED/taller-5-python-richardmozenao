@@ -1,6 +1,6 @@
-from . import animal
+from zooAnimales.animal import Animal
 
-class reptil(animal):
+class Reptil(Animal):
     listado = []
     iguanas = 0
     serpientes = 0
@@ -9,7 +9,7 @@ class reptil(animal):
         super().__init__(nombre, edad, habitat, genero)
         self.colorEscamas = colorEscamas
         self.largoCola = largoCola
-        reptil.listado.append(self)
+        Reptil.listado.append(self)
 
     @classmethod
     def cantidadReptiles(cls):
@@ -21,12 +21,12 @@ class reptil(animal):
     @classmethod
     def crearIguana(cls, nombre, edad, genero):
         cls.iguanas += 1
-        return reptil(nombre, edad, "humedal", genero, "verde", 3)
+        return Reptil(nombre, edad, "humedal", genero, "verde", 3)
     
     @classmethod
     def crearSerpiente(cls, nombre, edad, genero):
         cls.serpientes += 1
-        return reptil(nombre, edad, "jungla", genero, "blanco", 1)
+        return Reptil(nombre, edad, "jungla", genero, "blanco", 1)
     
     @classmethod
     def getIguanas(cls):

@@ -1,6 +1,6 @@
 from . import *
 
-class animal:
+class Animal:
     def __init__(self, nombre, edad, habitat, genero, zona = None):
         self.nombre = nombre
         self.edad = edad
@@ -19,7 +19,7 @@ class animal:
             "Reptiles: {}"
             "Peces: {}"
             "Anfibios: {}"
-        ).format(mamifero.cantidadMamiferos(), ave.cantidadAves(), reptil.cantidadReptiles(), pez.cantidadPeces, anfibio.cantidadAnfibios())
+        ).format(Mamifero.cantidadMamiferos(), Ave.cantidadAves(), Reptil.cantidadReptiles(), Pez.cantidadPeces, Anfibio.cantidadAnfibios())
 
         return mensaje
     
