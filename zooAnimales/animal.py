@@ -33,7 +33,7 @@ class Animal:
     def getEdad(self):
         return self.edad
     
-    def setHabitat(self):
+    def getHabitat(self):
         return self.habitat
     
     def getZona(self):
