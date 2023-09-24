@@ -17,11 +17,11 @@ class Animal:
         from zooAnimales.pez import Pez
         from zooAnimales.reptil import Reptil
         mensaje = (
-            "Mamiferos: {}\n"
-            "Aves: {}\n"
-            "Reptiles: {}\n"
-            "Peces: {}\n"
-            "Anfibios: {}\n"
+            "Mamiferos : {}\n"
+            "Aves : {}\n"
+            "Reptiles : {}\n"
+            "Peces : {}\n"
+            "Anfibios : {}\n"
         ).format(Mamifero.cantidadMamiferos(), Ave.cantidadAves(), Reptil.cantidadReptiles(), Pez.cantidadPeces(), Anfibio.cantidadAnfibios())
         return mensaje
     
