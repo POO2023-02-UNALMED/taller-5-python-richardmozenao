@@ -1,9 +1,3 @@
-# from anfibio import Anfibio
-# from ave import Ave
-# from mamifero import Mamifero
-# from pez import Pez
-# from reptil import Reptil
-
 class Animal:
     def __init__(self, nombre, edad, habitat, genero, zona = None):
         self.nombre = nombre
@@ -23,7 +17,7 @@ class Animal:
         from zooAnimales.pez import Pez
         from zooAnimales.reptil import Reptil
         mensaje = (
-            "Mamifero: {}\n"
+            "Mamiferos: {}\n"
             "Aves: {}\n"
             "Reptiles: {}\n"
             "Peces: {}\n"
